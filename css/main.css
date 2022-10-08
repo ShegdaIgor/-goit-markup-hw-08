@@ -139,7 +139,6 @@ button {
   max-height: 796px;
   z-index: 100;
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.3);
-  background-color: aquamarine;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -166,6 +165,68 @@ button {
   border: none;
   padding: 0;
   line-height: 0;
+}
+
+.mobile-menu__link {
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+  color: #212121;
+}
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: var(--accent-color);
+}
+.mobile-menu__link.current {
+  color: var(--accent-color);
+}
+
+.mobile-menu__contacts {
+  margin-top: 302px;
+}
+
+.mobile-menu__phone {
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.176;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+  color: #2196f3;
+}
+
+.mobile-menu__email {
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  margin-bottom: 64px;
+  color: #757575;
+}
+
+.mobile-menu__social {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+}
+.mobile-menu__social_link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 .title {
@@ -498,6 +559,7 @@ button {
   background-color: transparent;
   border: none;
   padding: 0;
+  line-height: 0;
 }
 
 .page-header__container {
