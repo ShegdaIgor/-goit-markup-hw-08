@@ -1,29 +1,30 @@
-.page-header {
-    background-color: var(--header-color);
-
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #ececec;
-}
-
 .page-nav-list {
     display: none;
 }
 
-.connection-list__link {
+.connection-list {
     display: none;
 }
 
-.connection-list__icon {
-    display: none;
-}
-
-.mobile-menu-btn {
+.mobile-menu-button {
     background-color: transparent;
     border: none;
     padding: 0;
-    line-height: 0;
 }
+
+.page-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// .page-header {
+//     background-color: var(--header-color);
+
+//     border-bottom-width: 1px;
+//     border-bottom-style: solid;
+//     border-bottom-color: #ececec;
+// }
 
 // .page-header-container {
 //     display: flex;
@@ -31,35 +32,36 @@
 // }
 
 // миксин для убирания маржинов
-.page-nav__logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
-}
+// .page-nav__logo {
+//     padding-top: 24px;
+//     padding-bottom: 25px;
+// }
 // миксин для убирания маржинов и других элементов, влияющих на геометрию.
 
-.logo {
-    display: flex;
-    align-items: center;
+// .logo {
+//     display: flex;
+//     align-items: center;
+//     padding-top: 24px;
+//     padding-bottom: 25px;
+//     color: #000000;
+//     font-family: var(--font-accent);
+//     font-weight: 700;
+//     font-size: 26px;
+//     line-height: 1.19;
+//     text-decoration: none;
 
-    color: #000000;
-    font-family: var(--font-accent);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
+//     transition: color var(--transition-dur-and-func);
 
-    transition: color var(--transition-dur-and-func);
-
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
-}
+//     &:hover,
+//     &:focus {
+//         color: var(--accent-color);
+//     }
+// }
 
 // модификатор блока
-.logo_logo-accent_dark {
-    color: var(--accent-color);
-}
+// .logo_logo-accent_dark {
+//     color: var(--accent-color);
+// }
 // модификатор блока
 
 // .page-nav {

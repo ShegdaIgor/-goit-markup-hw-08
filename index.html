@@ -23,7 +23,7 @@
     </head>
     <body>
         <header class="page-header">
-            <div class="container page-header-container">
+            <div class="container page-header__container">
                 <nav class="page-nav">
                     <a href="./index.html" class="logo page-nav__logo"
                         ><span class="logo-accent logo_logo-accent_dark"
@@ -51,8 +51,8 @@
                         </li>
                     </ul>
                 </nav>
-                <button type="button" class="mobile-menu-btn">
-                    <svg class="mobile-menu-btn_icon" width="40" height="40">
+                <button type="button" class="mobile-menu-button" data-menu-open>
+                    <svg class="mobile-menu-btn__icon" width="40" height="40">
                         <use href="./images/sprite.svg#icon-menu-burger"></use>
                     </svg>
                 </button>
@@ -89,6 +89,30 @@
                         >
                     </li>
                 </ul>
+            </div>
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu__container">
+                    <button
+                        type="button"
+                        class="mobile-menu__close-btn"
+                        data-menu-close
+                    >
+                        <svg
+                            class="mobile-menu__close-icon"
+                            width="40"
+                            height="40"
+                        >
+                            <use
+                                href="./images/sprite.svg#icon-close_40px"
+                            ></use>
+                        </svg>
+                    </button>
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
             </div>
         </header>
         <main>
@@ -920,6 +944,7 @@
                 </form>
             </div>
         </div> -->
-        <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
+        <!-- <script src="./js/modal.js"></script> -->
     </body>
 </html>
