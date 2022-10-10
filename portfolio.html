@@ -22,24 +22,28 @@
     </head>
     <body>
         <header class="page-header">
-            <div class="container page-header-container">
+            <div class="container page-header__container">
                 <nav class="page-nav">
-                    <a href="./index.html" class="logo page-nav__logo"
-                        ><span class="logo-accent logo_logo-accent_dark"
+                    <a
+                        href="./index.html"
+                        class="logo page-nav__logo page-nav__logo-mobile"
+                        ><span class="logo-accent logo__logo-accent_dark"
                             >Web</span
                         >Studio</a
                     >
 
                     <ul class="page-nav-list list">
                         <li class="page-nav__item">
-                            <a href="./index.html" class="page-nav__link link"
+                            <a
+                                href="./index.html"
+                                class="page-nav__link current link"
                                 >Студія</a
                             >
                         </li>
                         <li class="page-nav__item">
                             <a
                                 href="./portfolio.html"
-                                class="page-nav__link-portfolio current link"
+                                class="page-nav__link link"
                                 >Портфоліо</a
                             >
                         </li>
@@ -48,6 +52,11 @@
                         </li>
                     </ul>
                 </nav>
+                <button type="button" class="mobile-menu-button" data-menu-open>
+                    <svg class="mobile-menu-btn__icon" width="40" height="40">
+                        <use href="./images/sprite.svg#icon-menu-burger"></use>
+                    </svg>
+                </button>
 
                 <ul class="connection-list list">
                     <li class="connection-list__item">
@@ -81,6 +90,93 @@
                         >
                     </li>
                 </ul>
+            </div>
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu__container">
+                    <button
+                        type="button"
+                        class="mobile-menu__close-btn"
+                        data-menu-close
+                    >
+                        <svg
+                            class="mobile-menu__close-icon"
+                            width="40"
+                            height="40"
+                        >
+                            <use
+                                href="./images/sprite.svg#icon-close_40px"
+                            ></use>
+                        </svg>
+                    </button>
+                    <ul class="mobile-menu__list list">
+                        <li>
+                            <a
+                                href="./index.html"
+                                class="mobile-menu__link current link"
+                                >Студія</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="./portfolio.html"
+                                class="mobile-menu__link link"
+                                >Портфоліо</a
+                            >
+                        </li>
+                        <li>
+                            <a href="" class="mobile-menu__link link"
+                                >Контакти</a
+                            >
+                        </li>
+                    </ul>
+
+                    <ul class="mobile-menu__contacts list">
+                        <li>
+                            <a
+                                href="tel:+380961111111"
+                                class="mobile-menu__phone link"
+                                >+38 096 111 11 11</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="mailto:info@devstudio.com"
+                                class="mobile-menu__email link"
+                                >info@devstudio.com</a
+                            >
+                        </li>
+                    </ul>
+                    <ul class="mobile-menu__social list">
+                        <li>
+                            <a
+                                class="mobile-menu__social-link string link"
+                                href="Instagram"
+                                >Instagram</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="mobile-menu__social-link line link"
+                                href="Twitter"
+                                >Twitter</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="mobile-menu__social-link stroke link"
+                                href="Facebook"
+                                >Facebook</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="mobile-menu__social-link link"
+                                href="LinkedIn"
+                                >LinkedIn</a
+                            >
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
         <main>

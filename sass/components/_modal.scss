@@ -64,3 +64,20 @@
 
     color: var(--title-text-color);
 }
+
+@media screen and (max-width: 1199px) {
+    .modal {
+        width: 450px;
+        height: 609px;
+    }
+
+    .modal-caption {
+        font-family: var(--primary-font);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+}

@@ -25,7 +25,9 @@
         <header class="page-header">
             <div class="container page-header__container">
                 <nav class="page-nav">
-                    <a href="./index.html" class="logo page-nav__logo"
+                    <a
+                        href="./index.html"
+                        class="logo page-nav__logo page-nav__logo-mobile"
                         ><span class="logo-accent logo__logo-accent_dark"
                             >Web</span
                         >Studio</a
@@ -97,7 +99,11 @@
                         class="mobile-menu__close-btn"
                         data-menu-close
                     >
-                        <svg class="mobile-menu__close-icon">
+                        <svg
+                            class="mobile-menu__close-icon"
+                            width="40"
+                            height="40"
+                        >
                             <use
                                 href="./images/sprite.svg#icon-close_40px"
                             ></use>
@@ -136,7 +142,7 @@
                         <li>
                             <a
                                 href="mailto:info@devstudio.com"
-                                class="connection-list__email link"
+                                class="mobile-menu__email link"
                                 >info@devstudio.com</a
                             >
                         </li>
@@ -151,14 +157,14 @@
                         </li>
                         <li>
                             <a
-                                class="mobile-menu__social-link string link"
+                                class="mobile-menu__social-link line link"
                                 href="Twitter"
                                 >Twitter</a
                             >
                         </li>
                         <li>
                             <a
-                                class="mobile-menu__social-link string link"
+                                class="mobile-menu__social-link stroke link"
                                 href="Facebook"
                                 >Facebook</a
                             >
@@ -175,7 +181,7 @@
             </div>
         </header>
         <main>
-            <!-- <section class="hero-section hero-section__background">
+            <section class="hero-section hero-section__background">
                 <div class="hero-section__container container">
                     <h1 class="hero-section__title title">
                         Ефективні рішення для вашого бізнесу
@@ -189,9 +195,9 @@
                         Замовити послугу
                     </button>
                 </div>
-            </section> -->
+            </section>
 
-            <!-- <section class="benefits-section section">
+            <section class="benefits-section section">
                 <div class="container">
                     <h2 class="benefits-title visually-hidden">
                         Наші переваги
@@ -279,20 +285,29 @@
                         </li>
                     </ul>
                 </div>
-            </section> -->
+            </section>
 
-            <!-- <section class="examples-section section">
+            <section class="examples-section section">
                 <div class="container">
                     <h2 class="examples-title title list">Чим ми займаємося</h2>
 
                     <ul class="examples-list list">
                         <li class="examples-item">
                             <div class="examples-background">
-                                <img
-                                    src="./images/programmings.jpg"
-                                    alt="пишемо програми для комп'ютерів"
-                                    width="370"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/field/field-1.jpg     1x,
+                                            ./images/field/field-1@2x.jpg  2x,
+                                            ./images/field/field-1@2x.webp 2x
+                                        "
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <img
+                                        src="./images/programmings.jpg"
+                                        alt="пишемо програми для комп'ютерів"
+                                    />
+                                </picture>
                                 <div class="examples-background-overlay">
                                     <p class="examples-background-text">
                                         Десктопні додатки
@@ -303,11 +318,20 @@
 
                         <li class="examples-item">
                             <div class="examples-background">
-                                <img
-                                    src="./images/apps.jpg"
-                                    alt="створюємо мобільні додатки"
-                                    width="370"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/field/field-2.jpg     1x,
+                                            ./images/field/field-2@2x.jpg  2x,
+                                            ./images/field/field-2@2x.webp 2x
+                                        "
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <img
+                                        src="./images/apps.jpg"
+                                        alt="створюємо мобільні додатки"
+                                    />
+                                </picture>
                                 <div class="examples-background-overlay">
                                     <p class="examples-background-text">
                                         Мобільні додатки
@@ -317,11 +341,20 @@
                         </li>
                         <li class="examples-item">
                             <div class="examples-background">
-                                <img
-                                    src="./images/settings.jpg"
-                                    alt="тонкі налаштування обладнання"
-                                    width="370"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/field/field-3.jpg     1x,
+                                            ./images/field/field-3@2x.jpg  2x,
+                                            ./images/field/field-3@2x.webp 2x
+                                        "
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <img
+                                        src="./images/settings.jpg"
+                                        alt="тонкі налаштування обладнання"
+                                    />
+                                </picture>
                                 <div class="examples-background-overlay">
                                     <p class="examples-background-text">
                                         Дизайнерські рішення
@@ -331,19 +364,45 @@
                         </li>
                     </ul>
                 </div>
-            </section> -->
+            </section>
 
-            <!-- <section class="team-section section">
+            <section class="team-section section">
                 <div class="container">
                     <h2 class="team-title title">Наша команда</h2>
                     <ul class="team-list">
                         <li class="team-item list">
-                            <img
-                                class="team-card"
-                                src="./images/igor.jpg"
-                                alt="чоловік у коричневій сорочці"
-                                width="270"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/staff/desktop/staff-1.jpg     1x,
+                                        ./images/staff/desktop/staff-1@2x.jpg  2x,
+                                        ./images/staff/desktop/staff-1@2x.webp 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/staff/tablet/staff-1.jpg     1x,
+                                        ./images/staff/tablet/staff-1@2x.jpg  2x,
+                                        ./images/staff/tablet/staff-1@2x.webp 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/staff/mobile/staff-1.jpg     1x,
+                                        ./images/staff/mobile/staff-1@2x.jpg  2x,
+                                        ./images/staff/mobile/staff-1@2x.webp 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                <img
+                                    class="team-card"
+                                    src="./images/igor.jpg"
+                                    alt="чоловік у коричневій сорочці"
+                                />
+                            </picture>
+
                             <div class="team-item-wrapper">
                                 <h3 class="team-item-title title-name-team">
                                     Ігор Дем'яненко
@@ -416,12 +475,37 @@
                         </li>
 
                         <li class="team-item list">
-                            <img
-                                class="team-card"
-                                src="./images/olga.jpg"
-                                alt="блондинка в чорному піджаку"
-                                width="270"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/staff/desktop/staff-2.jpg     1x,
+                                        ./images/staff/desktop/staff-2@2x.jpg  2x,
+                                        ./images/staff/desktop/staff-2@2x.webp 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/staff/tablet/staff-2.jpg     1x,
+                                        ./images/staff/tablet/staff-2@2x.jpg  2x,
+                                        ./images/staff/tablet/staff-2@2x.webp 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/staff/mobile/staff-2.jpg     1x,
+                                        ./images/staff/mobile/staff-2@2x.jpg  2x,
+                                        ./images/staff/mobile/staff-2@2x.webp 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                <img
+                                    class="team-card"
+                                    src="./images/olga.jpg"
+                                    alt="блондинка в чорному піджаку"
+                                />
+                            </picture>
                             <div class="team-item-wrapper">
                                 <h3 class="team-item-title title-name-team">
                                     Ольга Рєпіна
@@ -496,12 +580,38 @@
                         </li>
 
                         <li class="team-item list">
-                            <img
-                                class="team-card"
-                                src="./images/nikolay.jpg"
-                                alt="чоловік у блакитній сорочці"
-                                width="270"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/staff/desktop/staff-1.jpg     1x,
+                                        ./images/staff/desktop/staff-1@2x.jpg  2x,
+                                        ./images/staff/desktop/staff-1@2x.webp 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/staff/tablet/staff-3.jpg     1x,
+                                        ./images/staff/tablet/staff-3@2x.jpg  2x,
+                                        ./images/staff/tablet/staff-3@2x.webp 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/staff/mobile/staff-3.jpg     1x,
+                                        ./images/staff/mobile/staff-3@2x.jpg  2x,
+                                        ./images/staff/mobile/staff-3@2x.webp 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+
+                                <img
+                                    class="team-card"
+                                    src="./images/nikolay.jpg"
+                                    alt="чоловік у блакитній сорочці"
+                                />
+                            </picture>
                             <div class="team-item-wrapper">
                                 <h3 class="team-item-title title-name-team">
                                     Микола Тарасов
@@ -573,12 +683,37 @@
                             </div>
                         </li>
                         <li class="team-item list">
-                            <img
-                                class="team-card"
-                                src="./images/michael.jpg"
-                                alt="чоловік у чорній футболці"
-                                width="270"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/staff/desktop/staff-4.jpg     1x,
+                                        ./images/staff/desktop/staff-4@2x.jpg  2x,
+                                        ./images/staff/desktop/staff-4@2x.webp 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/staff/tablet/staff-4.jpg     1x,
+                                        ./images/staff/tablet/staff-4@2x.jpg  2x,
+                                        ./images/staff/tablet/staff-4@2x.webp 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/staff/mobile/staff-4.jpg     1x,
+                                        ./images/staff/mobile/staff-4@2x.jpg  2x,
+                                        ./images/staff/mobile/staff-4@2x.webp 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                <img
+                                    class="team-card"
+                                    src="./images/michael.jpg"
+                                    alt="чоловік у чорній футболці"
+                                />
+                            </picture>
                             <div class="team-item-wrapper">
                                 <h3 class="team-item-title title-name-team">
                                     Михайло Єрмаков
@@ -651,21 +786,22 @@
                         </li>
                     </ul>
                 </div>
-            </section> -->
+            </section>
+            -->
 
-            <!-- <section class="our-clients-section section">
-                <div class="container">
-                    <h2 class="our-clients-section-title title">
+            <section class="our-clients-section section">
+                <div class="container our-clients__container">
+                    <h2 class="our-clients-section__title title">
                         Постійні клієнти
                     </h2>
-                    <ul class="our-clients-section-list">
-                        <li class="our-clients-item list">
+                    <ul class="our-clients-section__list">
+                        <li class="our-clients__item list">
                             <a
                                 href=""
-                                class="our-clients-section-list-link link"
+                                class="our-clients-section__list_link link"
                             >
                                 <svg
-                                    class="our-clients-section-icon"
+                                    class="our-clients-section__icon"
                                     width="106"
                                     height="60"
                                 >
@@ -675,13 +811,13 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="our-clients-item list">
+                        <li class="our-clients__item list">
                             <a
                                 href=""
-                                class="our-clients-section-list-link link"
+                                class="our-clients-section__list_link link"
                             >
                                 <svg
-                                    class="our-clients-section-icon"
+                                    class="our-clients-section__icon"
                                     width="106"
                                     height="60"
                                 >
@@ -691,13 +827,13 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="our-clients-item list">
+                        <li class="our-clients__item list">
                             <a
                                 href=""
-                                class="our-clients-section-list-link link"
+                                class="our-clients-section__list_link link"
                             >
                                 <svg
-                                    class="our-clients-section-icon"
+                                    class="our-clients-section__icon"
                                     width="106"
                                     height="60"
                                 >
@@ -707,13 +843,13 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="our-clients-item list">
+                        <li class="our-clients__item list">
                             <a
                                 href=""
-                                class="our-clients-section-list-link link"
+                                class="our-clients-section__list_link link"
                             >
                                 <svg
-                                    class="our-clients-section-icon"
+                                    class="our-clients-section__icon"
                                     width="106"
                                     height="60"
                                 >
@@ -723,13 +859,13 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="our-clients-item list">
+                        <li class="our-clients__item list">
                             <a
                                 href=""
-                                class="our-clients-section-list-link link"
+                                class="our-clients-section__list_link link"
                             >
                                 <svg
-                                    class="our-clients-section-icon"
+                                    class="our-clients-section__icon"
                                     width="106"
                                     height="60"
                                 >
@@ -739,13 +875,13 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="our-clients-item list">
+                        <li class="our-clients__item list">
                             <a
                                 href=""
-                                class="our-clients-section-list-link link"
+                                class="our-clients-section__list_link link"
                             >
                                 <svg
-                                    class="our-clients-section-icon"
+                                    class="our-clients-section__icon"
                                     width="106"
                                     height="60"
                                 >
@@ -757,10 +893,10 @@
                         </li>
                     </ul>
                 </div>
-            </section> -->
+            </section>
         </main>
 
-        <!-- <footer class="footer">
+        <footer class="footer">
             <div class="container foot-list">
                 <ul class="foot-footer-list list">
                     <li>
@@ -865,43 +1001,36 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
-                        <div>
-                            <p class="modal-caption-footer">
-                                Підпишіться на розсилку
-                            </p>
-
-                            <form class="modal-form-footer">
-                                <label class="modal-form-field-footer">
-                                    <input
-                                        name="user-email"
-                                        type="text"
-                                        class="modal-form-input-footer"
-                                        placeholder="E-mail"
-                                        required
-                                    /> </label
-                                ><button
-                                    type="submit"
-                                    class="modal-form-btn-footer"
-                                >
-                                    Підписатися<svg
-                                        class="modal-close-btn-icon"
-                                        width="24"
-                                        height="24"
-                                    >
-                                        <use
-                                            href="./images/sprite.svg#icon-icon-send"
-                                        ></use>
-                                    </svg>
-                                </button>
-                            </form>
-                        </div>
-                    </li>
                 </ul>
-            </div>
-        </footer> -->
+                <div>
+                    <p class="modal-caption-footer">Підпишіться на розсилку</p>
 
-        <!-- <div class="backdrop is-hidden" data-modal>
+                    <form class="modal-form-footer">
+                        <label class="modal-form-field-footer">
+                            <input
+                                name="user-email"
+                                type="text"
+                                class="modal-form-input-footer"
+                                placeholder="E-mail"
+                                required
+                            /> </label
+                        ><button type="submit" class="modal-form-btn-footer">
+                            Підписатися<svg
+                                class="modal-close-btn-icon"
+                                width="24"
+                                height="24"
+                            >
+                                <use
+                                    href="./images/sprite.svg#icon-icon-send"
+                                ></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button type="button" class="modal-close-btn" data-modal-close>
                     <svg class="modal-close-btn-icon" width="11" height="11">
@@ -1002,8 +1131,9 @@
                     </button>
                 </form>
             </div>
-        </div> -->
+        </div>
+
         <script src="./js/mobile-menu.js"></script>
-        <!-- <script src="./js/modal.js"></script> -->
+        <script src="./js/modal.js"></script>
     </body>
 </html>
