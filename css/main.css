@@ -989,7 +989,6 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding-bottom: 30px;
   }
   .benefits-element {
     display: flex;
@@ -1018,6 +1017,9 @@ button {
   }
 }
 @media screen and (min-width: 1200px) {
+  .benefits-section {
+    padding-bottom: 47px;
+  }
   .benefits-list-item {
     width: calc((100% - 90px) / 4);
   }
@@ -1079,6 +1081,11 @@ button {
 @media screen and (max-width: 1199px) {
   .examples-section {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .examples-section {
+    padding-top: 47px;
   }
 }
 .team-section {

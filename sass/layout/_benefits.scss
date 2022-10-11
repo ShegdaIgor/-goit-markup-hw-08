@@ -47,7 +47,6 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
-        padding-bottom: 30px;
     }
 
     .benefits-element {
@@ -82,6 +81,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .benefits-section {
+        padding-bottom: 47px;
+    }
     .benefits-list-item {
         width: calc((100% - 90px) / 4);
     }
