@@ -57,6 +57,11 @@
         display: none;
     }
 
+    .page-header__container {
+        display: flex;
+        align-items: center;
+    }
+
     .page-nav__logo {
         padding-top: 26px;
         padding-bottom: 26px;
@@ -114,7 +119,7 @@
     }
 
     .connection-list {
-        transform: translate(78%, -142%);
+        // transform: translate(78%, -142%);
         margin-left: auto;
     }
 
