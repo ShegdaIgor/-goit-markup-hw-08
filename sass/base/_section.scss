@@ -13,3 +13,10 @@
     line-height: 1.17;
     text-align: center;
 }
+
+@media screen and (max-width: 1199px) {
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}

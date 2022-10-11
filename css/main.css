@@ -102,6 +102,12 @@ button {
   text-align: center;
 }
 
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 .button-list {
   display: flex;
   justify-content: center;
@@ -807,7 +813,7 @@ button {
     margin-left: -2px;
     margin-right: auto;
     content: "";
-    width: 48px;
+    width: 78px;
     height: 4px;
     top: 79px;
     background-color: var(--accent-color);
