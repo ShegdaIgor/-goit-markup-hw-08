@@ -678,7 +678,7 @@ button {
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .mobile-menu-button {
     display: none;
   }
@@ -813,7 +813,7 @@ button {
     margin-left: -2px;
     margin-right: auto;
     content: "";
-    width: 78px;
+    width: 48px;
     height: 4px;
     top: 79px;
     background-color: var(--accent-color);
