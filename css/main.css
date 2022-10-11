@@ -638,8 +638,6 @@ button {
 .logo {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
   color: #000000;
   font-family: var(--font-accent);
   font-weight: 700;
@@ -666,8 +664,6 @@ button {
   .mobile-menu-button {
     background-color: transparent;
     border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
     line-height: 0;
   }
   .page-header {
